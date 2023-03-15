@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Quiz Hero</title>
+    <!-- tailwind CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-orange-50e">
+    <header class="text-center my-10">
+        <h1 class="text-2xl font-bold"> Blog - Quiz Hero</h1>
+    </header>
+    <main>
+        <section>
+            <div class="w-3/4 mx-auto mb-4">
+                <h1 class="text-2xl font-bold">Question and answer:</h1>
+            </div>
+            <!-- question 1 -->
+            <div class="bg-orange-50 w-3/4 mx-auto p-10 rounded-lg mb-4">
+                <h2 class="text-xl font-bold mb-2">Question 1: What is the diffrence between map(), filter(), forEach(),
+                    find()
+                    method?</h2>
+                <p class="text-lg font-normal">All four methods are array methods but their purpose are diffrent. map()
+                    loops through an array elements and do something (according the code) and returns a new array.
+
+                    filter() loops through an array elements and based upon the condition it returns a new array. This
+                    array
+                    contains only elements that passed the condition.
+
+                    forEach() method loops through an array elements and do something (according the code) but returns
+                    nothing.
+
+                    find() method loops through an array elements and based upon the condition it finds out the first
+                    matched element that passed the condition and returns the element directly.
+                </p>
+            </div>
+            <!-- question 2 -->
+            <div class="bg-orange-50 w-3/4 mx-auto p-10 rounded-lg mb-4">
+                <h2 class="text-xl font-bold mb-2">Question 2: What is the diffrence between local storage, session
+                    storage
+                    and cookies?</h2>
+                <p class="text-lg font-normal">
+                    Local storage, session storage, and cookies are used to store data in a user's web browser.
+
+                    Local storage is similar to cookies, but the data is stored on the user's browser permanently
+                    or until the user clears their browser data. This means that the data can be accessed even after
+                    the user closes and reopens their browser.
+
+                    Session storage is similar to cookies, but the data is only stored for the duration of the user's
+                    browsing session. Once the user closes their browser, the data is deleted.
+
+                    Cookies are small pieces of data that websites can store on a user's browser. They can be used for
+                    things like remembering login information or tracking website usage.
+                </p>
+            </div>
+            <!-- question 3 -->
+            <div class="bg-orange-50 w-3/4 mx-auto p-10 rounded-lg mb-4">
+                <h2 class="text-xl font-bold mb-2">Question 3: What is event loop? How does it work?</h2>
+                <p class="text-lg font-normal">
+                    The event loop is a part of JavaScript's runtime environment that manages the execution of code. It
+                    works by constantly checking the call stack to see if there are any functions that need to be
+                    executed. If the call stack is empty, the event loop checks the task queue to see if there are any
+                    pending tasks.
+
+                    When a function is called, it is added to the call stack. If the function calls another function,
+                    that function is added to the call stack on top of the previous one. When a function finishes
+                    executing, it is removed from the call stack.
+
+                    If there are any asynchronous operations such as fetching data from a server that need to be
+                    executed, they are added to the task queue. When the call stack is empty, the event loop takes the
+                    first task from the task queue and adds it to the call stack to be executed.
+                </p>
+            </div>
+        </section>
+        
+    </main>
+
+</body>
+
+</html>
